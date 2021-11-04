@@ -1,0 +1,243 @@
+<!-- Début du profil -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CryptoMatrixé</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://kit.fontawesome.com/98d63c299e.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="quote.css">
+<link rel="icon" href="image/icobtc1.ico">
+</head>
+
+<!-- C'est parti! -->
+<body>
+	<div id="banner">
+		<h1>Quoc Thien VO</h1>
+		<h2>Student at KEDGE Business School</h2>
+		<h3>BORDEAUX</h3>
+	</div>	  
+</body>
+
+
+	<div class="biblio">
+		<p class="flotte">
+<img src="image/photoprof1.jpeg" class="image-circle" width="350">
+</p>
+<p class="presentation"> <strong>QUICK PRESENTATION</strong> </p>
+<p class="textbiblio">
+😍 Passionate about Finance and Fintech. 💻 <br>
+  <br>
+🤓 I have a profound interest for the ₿lockchain technologies.🌎 <br>
+   <br>
+📖 I'm currently a Student at KEDGE Business School. 🎓 <br>
+   <br>
+🐊 Part-time Sales Consultant at Lacoste. 👗 <br>
+<br>
+📈 Commercial Associate at Transaction KedgeBS. 💹 <br> 
+</p>
+<p class="presentation"> <strong> Please check out my CV below 👇🏼 </strong></p>
+<a href="download/cvsite.pdf" class="buttoncv" target="_blank">Download my CV</a>
+</div>
+
+<!-- Mes passions -->
+<div class="div-1">
+	<h2> <strong>My Passions</strong> 🤩</h2>
+	<p> Let's See Who I Am. 🤔 I really appreciate (and try) to read at least a book every month. So here's a collection of my favorite ones. </p>
+<h3> My Favorite Reads 📚</h3>
+<img src="image/intelligentinvescover.jpeg" class="image-cover" width= "200">
+<blockquote class="blockquote blockquote-bordered"> 
+	<p class="blockquote-text"> 
+		Wonderful time reading this book. Even though it's more than 70 years old, the book gave me enough of confidence to conquer the financial market. Benjamin Graham's lessons are timeless.
+	</p>
+</blockquote>
+
+<div>
+<img src="image/oneuponws.jpeg" class="image-cover" width="200">
+<blockquote class="blockquote blockquote-bordered"> 
+	<p class="blockquote-text"> 
+		This book is a mandatory one. It helped me to analyse and comprehend the market with a clear eye view. Peter Lynch's investement strategy is such powerful that I highly use it in my asset management strategy.
+	</p>
+</blockquote>
+</div>
+
+<div>
+<img src="image/richdadcover.jpeg" class="image-cover" width="200">
+<blockquote class="blockquote blockquote-bordered"> 
+	<p class="blockquote-text"> 
+	It's definitely my favorite read of all. This book changed my mind and at some extend, my life. Robert Kyosaki's book is a must read. Full stop, no debate.
+	</p>
+</blockquote>
+</div>
+
+</div>
+<!-- Blockchain and everything else-->
+<div class="blockchain">
+	<h3> My Passion For Tech and the ₿lockchain and more</h3>
+<p> I have a lot of passions, and sometimes, it can be exhausting. 😪 </p>
+
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="image/blockchain/crypto.jpg" style="width:100%">
+    <div class="text">I started to get deeply involved into the cryptographic world since the start of the year 2021.</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="image/blockchain/spacex.jpg" style="width:100%">
+    <div class="text">As far as I can remember, I always loved space. Especially since Elon Musk started SpaceX. He's by far, one of my best idol. </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="image/blockchain/apple.jpg" style="width:100%">
+    <div class="text">I cannot avoid mentionning that I'm an Apple Nerdy Sheep and Apple's Church fervent Believer.</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="image/blockchain/lacoste.jpg" style="width:100%">
+    <div class="text">Joke aside, I'm also a fashion lover. I'm an Ambassador of Lacoste. Daring, Inventiveness, Elegance and Tenacity. </div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</div>
+<!-- Mes réseaux -->
+
+<div class="div-reseaux">
+	<h2>🎉 <strong>Cheers ! You made it to the end ! 🎊</strong><br>	</h2>
+		<h3>Don't forget to follow me @ :
+</h3>
+	<ul id="horizontal-list">
+		<li>
+			<a href="https://twitter.com/qthienvo" target="_blank" class="fab fa-twitter-square" ></a>
+		</li>
+		<li> <a href="https://www.linkedin.com/in/quoc-thien-vo-4440b01a4/" target="_blank" class="fab fa-linkedin"></a>
+		</li>
+	</ul>
+</div>
+
+
+<!-- style -->
+<style>
+.biblio{
+	padding: 40px;
+		height: 430px;
+        margin: 60px;
+        margin-left: 70px;
+        margin-right: 70px;
+        border-radius: 10px;
+        background-color: whitesmoke;
+        box-shadow: 0px 10px 30px rgba(0,0,0,1);
+        color: #3b4d61;
+}
+.presentation{
+	font-size: 18px;
+
+	color: #3b4d61;
+}
+.textbiblio{
+	margin-top: 0px;
+	font-size: 20px;
+
+	color: #3b4d61;
+}
+	.div-1{
+		padding: 40px;
+        background-color: whitesmoke;
+      margin: 60px;
+        margin-left: 70px;
+        margin-right: 70px;
+        border-radius: 10px;
+        box-shadow: 0px 10px 30px rgba(0,0,0,1);
+        color: #3b4d61;
+
+	}
+.div-1 p{
+	font-size: 17px;
+}
+.blockchain{
+			padding: 40px;
+        background-color: whitesmoke;
+      margin: 60px;
+        margin-left: 70px;
+        margin-right: 70px;
+        border-radius: 10px;
+        box-shadow: 0px 10px 30px rgba(0,0,0,1);
+        color: #3b4d61;
+font-family: "Roboto", sans-serif;
+}
+
+	.div-2{
+		padding: 100px;
+		height: 200px;
+        margin: 20px;
+        border-radius: 10px;
+        background-color: #6b7b8c;
+        font-family: "Roboto", sans-serif;
+	}
+	.div-reseaux{
+	padding: 40px;
+		height: 150px;
+        margin: 60px;
+        margin-left: 70px;
+        margin-right: 70px;
+        border-radius: 10px;
+        background-color: rgb(227, 227, 227);
+        box-shadow: 0px 10px 30px rgba(0,0,0,1);
+        color: #3b4d61;
+	}
+
+
+</style>
+</body>
+</html>
